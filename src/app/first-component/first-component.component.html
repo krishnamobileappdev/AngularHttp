@@ -1,0 +1,18 @@
+<h1>{{parentData}}</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>POST ID</th>
+    <th>NAME</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let com of lstComments" (click)='clickfunciton(com.email)'>
+    <td >{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+
+  </tr>
+</table>
